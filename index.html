@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inquiry</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+ 
+
+  <body>
+
+<div class="web">
+  
+    <div class="container">
+
+      <span class="big-circle"></span>
+
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">SHOP</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>Rodriguez Rizal, PH 1860</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>aljunemaunes0@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>123-456-789</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="see">
+            <a href="#products" class="show">See Products</a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="https://formspree.io/f/mqkwbazv"
+          method="POST" autocomplete="off">
+            <h3 class="title">Send Your Order Here</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" required/>
+              <label for="">Name of receiver</label>
+              <span>Name of receiver</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" required/>
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" required/>
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container">
+              <input type="text" name="code" class="input" required/>
+              <label for="">Product Code</label>
+              <span>Product Code</span>
+            </div>
+            <div class="instruc">
+              <i>For multiple product, use this format:<br>
+                Ex. TOTE, FLATWARES, CAP or PENBLACK(2)
+            </i>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="address" class="input" required></textarea>
+              <label for="">Delivery Address</label>
+              <span>Delivery Address</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message (Optional)</label>
+              <span>Message (Optional)</span>
+            </div>
+            
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+
+
+<!--This is a the GALLERY SECTION-->
+
+    <div id="products" class="gallery-section">
+      <div class="inner-width">
+        <h1>PRODUCTS</h1>
+        <div class="border"></div>
+        <div class="gallery">
+
+          <a href="img/1.jpg" class="image">
+            <img src="img/1.jpg" alt="">
+          </a>
+
+          <a href="img/2.jpg" class="image">
+            <img src="img/2.jpg" alt="">
+          </a>
+
+          <a href="img/3.jpg" class="image">
+            <img src="img/3.jpg" alt="">
+          </a>
+
+          <a href="img/4.jpg" class="image">
+            <img src="img/4.jpg" alt="">
+          </a>
+
+          <a href="img/5.jpg" class="image">
+            <img src="img/5.jpg" alt="">
+          </a>
+
+          <a href="img/6.jpg" class="image">
+            <img src="img/6.jpg" alt="">
+          </a>
+
+          <a href="img/7.jpg" class="image">
+            <img src="img/7.jpg" alt="">
+          </a>
+
+          <a href="img/8.jpg" class="image">
+            <img src="img/8.jpg" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="footer">
+      <div class="border2"></div>
+      <div>Copyright © 2021 ALJUNE M.</div>
+    </div>
+
+
+  <script>
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
+  </script>
+
+</div>
+  </body>
+</html>
